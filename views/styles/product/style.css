@@ -11,21 +11,19 @@ nav{
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    height: 50px;
-    background: black;
+    height: 45px;
+    background: red;
 }
 
 .row-1{
-    width: 25%;
+    width: 29%;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
+    /* border: 2px solid red; */
 }
 
 .row-2{
-    width: 50%;
+    width: 40%;
+    /* border: 2px solid blue; */
 }
 
 .row-2 :hover{
@@ -50,7 +48,7 @@ a{
     color: white;
 }
 
-.row-3{
+/* .row-3{
     width: 25%;
     flex-wrap: wrap;
     display: flex;
@@ -61,7 +59,7 @@ a{
 
 .row-3 img{
     margin-left: 20px;
-}
+} */
 
 .language_button {
     display: inline-block;
