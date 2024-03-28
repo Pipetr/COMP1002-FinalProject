@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "LDO1",
+        "price": 200,
+        "image": "image",
+        "description":"Nintendo One"
+    },
+    {
+        "id": 2,
+        "name": "LDO2",
+        "price": 200,
+        "image": "image",
+        "description":"Nintendo One"
+    },
+    {
+        "id": 3,
+        "name": "LDO3",
+        "price": 200,
+        "image": "image",
+        "description":"Nintendo One"
+    },
+    {
+        "id": 4,
+        "name": "LDO4",
+        "price": 200,
+        "image": "image",
+        "description":"Nintendo One"
+    },
+    {
+        "id": 5,
+        "name": "LDO5",
+        "price": 200,
+        "image": "image",
+        "description":"Nintendo One"
+    }
+]
