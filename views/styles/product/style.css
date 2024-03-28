@@ -78,6 +78,36 @@ nav .toggle_button{
     scale: 0.95;
 }
 
+/* DROP DOWN */
+.drop_down{
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.drop_down.open{
+    height: 240px;
+}
+.drop_down li{
+    padding: 0.7rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.drop_down .action_button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 /* RESPONSIVE AREA FOR PRODUCT HTML */
 @media (max-width: 992px){
     nav .links,
@@ -87,5 +117,16 @@ nav .toggle_button{
 
     nav .toggle_button{
         display: block;
+    }
+
+    .drop_down{
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+    .drop_down{
+        left: 2rem;
+        width: unset;
     }
 }
