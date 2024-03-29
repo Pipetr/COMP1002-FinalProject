@@ -279,12 +279,7 @@ nav .toggle_button{
 }
 
 /* RESPONSIVE AREA FOR PRODUCT HTML */
-@media (max-width: 992px){
-    nav .links,
-    nav .action_button{
-        display: none;
-    }
-@media screen and (min-width:992px){
+@media (min-width:992px){
     .card{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -305,6 +300,11 @@ nav .toggle_button{
         padding-top: 0;
     }
 }
+@media (max-width: 992px){
+    nav .links,
+    nav .action_button{
+        display: none;
+    }
 
     nav .toggle_button{
         display: block;

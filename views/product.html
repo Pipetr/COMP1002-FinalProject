@@ -15,10 +15,10 @@
                 <a href="#">Nintendo Vault</a>
             </section>
             <ul class="links">
-                <li><a href="hero">Home</a></li>
-                <li><a href="hero">Home</a></li>
-                <li><a href="hero">Home</a></li>
-                <li><a href="hero">Home</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
             <a href="#" class="action_button">Click Me</a>
             <section class="toggle_button">
@@ -26,27 +26,16 @@
             </section>
         </nav>
         <section class="drop_down">
-            <li><a href="hero">Home</a></li>
-            <li><a href="hero">Home</a></li>
-            <li><a href="hero">Home</a></li>
-            <li><a href="hero">Home</a></li>
-            <li><a href="#" class="action_button">Click Me</a></li>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="action_button">Click Me</a></li>
+            </ul>
         </section>
     </header>
-    <script>
-        const toggle_btn= document.querySelector('.toggle_button')
-        const toggle_btn_icon= document.querySelector('.toggle_button i')
-        const dropdown= document.querySelector('.drop_down')
-
-        toggle_btn.onclick = function() {
-            dropdown.classList.toggle('open')
-            const isOpen = dropdown.classList.contains('open')
-
-            toggle_btn_icon.classList = isOpen
-                ? "fa-solid fa-xmark"
-                : "fa-solid fa-bars"
-        }
-    </script>
+    
     <main>
         <section class="card-wrapper">
             <section class="card">
@@ -139,7 +128,7 @@
             </section>
         </section>
     </main>
-    <script src="/COMP1002-FinalProject/models/product/script.js"></script>
     <script src="/COMP1002-FinalProject/models/product/script2.js"></script>
+    <script src="/COMP1002-FinalProject/models/product/script.js"></script>
 </body>
 </html>
