@@ -6,7 +6,6 @@
 }
 
 body{
-    height: 100vh;
     background-image: none;
     line-height: 1.5;
 }
@@ -34,6 +33,7 @@ img{
 }
 .img-item{
     margin: 0.3rem;
+    border: 1px solid black;
 }
 .img-item:nth-child(1),
 .img-item:nth-child(2),
@@ -141,7 +141,45 @@ img{
     margin-right: 0.2rem;
     margin-bottom: 1rem;
 }
-
+.purchase-info input {
+    width:60px;
+}
+.purchase-info .btn {
+    cursor: pointer;
+    color: white;
+}
+.purchase-info .btn:first-of-type{
+    background: blue;
+}
+.purchase-info .btn:last-of-type{
+    background: red;
+}
+.purchase-info .btn:hover{
+    opacity: 0.9;
+}
+.social-links{
+    display: flex;
+    align-items: center;
+}
+.social-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: black;
+    border: 1px solid black;
+    margin: 0 0.2rem;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: all 0.5s ease;
+}
+.social-links a:hover{
+    background: black;
+    border-color: transparent;
+    color: white;
+}
 li{
     list-style: none;
 }
@@ -246,6 +284,27 @@ nav .toggle_button{
     nav .action_button{
         display: none;
     }
+@media screen and (min-width:992px){
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:1.5rem
+    }
+    .card-wrapper{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content{
+        padding-top: 0;
+    }
+}
 
     nav .toggle_button{
         display: block;
