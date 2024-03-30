@@ -254,6 +254,7 @@ a {
 /* MAIN BODY CONFIGURATION */
 body {
     height: auto;
+    background-color: #000;
 }
 
 .card-wrapper {
@@ -285,7 +286,6 @@ img {
 
 .img-select {
     display: flex;
-    background-color: black;
 }
 
 .img-item {
@@ -312,7 +312,7 @@ img {
     text-transform: capitalize;
     font-weight: 700;
     position: relative;
-    color: #12263a;
+    color: white;
     margin: 1rem 0;
 }
 
@@ -323,7 +323,7 @@ img {
     bottom: 0;
     height: 4px;
     width: 80px;
-    background: #12263a;
+    background: red;
 }
 
 .product-link {
@@ -333,7 +333,7 @@ img {
     font-size: 0.9rem;
     display: inline-block;
     margin-bottom: 0.5rem;
-    background: #256eff;
+    background: red;
     color: #fff;
     padding: 0 0.3rem;
     transition: all 0.5s ease;
@@ -349,7 +349,7 @@ img {
 
 .product-rating span {
     font-weight: 600;
-    color: #252525;
+    color: white;
 }
 
 .product-price {
@@ -366,14 +366,18 @@ img {
     color: #f64749;
     text-decoration: line-through;
 }
+.last-price,
+.new-price{
+    color: white;
+}
 
 .new-price span {
-    color: #256eff;
+    color: blue;
 }
 
 .product-detail h2 {
     text-transform: capitalize;
-    color: #12263a;
+    color: white;
     padding-bottom: 0.6rem;
 }
 
@@ -381,6 +385,7 @@ img {
     font-size: 0.9rem;
     padding: 0.3rem;
     opacity: 0.8;
+    color: white;
 }
 
 .nin{
@@ -396,6 +401,7 @@ img {
 .product-detail ul {
     margin: 1rem 0;
     font-size: 0.9rem;
+    color: white;
 }
 
 .product-detail ul li {
@@ -449,6 +455,10 @@ img {
     opacity: 0.9;
 }
 
+.social-links p{
+    color: white;
+}
+
 .social-links {
     display: flex;
     align-items: center;
@@ -460,8 +470,8 @@ img {
     justify-content: center;
     width: 32px;
     height: 32px;
-    color: #000;
-    border: 1px solid #000;
+    color: white;
+    border: 1px solid white;
     margin: 0 0.2rem;
     border-radius: 50%;
     text-decoration: none;
