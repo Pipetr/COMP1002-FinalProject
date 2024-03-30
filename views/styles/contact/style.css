@@ -8,13 +8,17 @@
 
 
 /* BODY START */
+body{
+    height: auto;
+}
 body,
 input,
 textarea {
     font-family: "Poppins", sans-serif;
+    
 }
 
-.container {
+.containers {
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -32,7 +36,7 @@ textarea {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    z-index: 10;
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -115,7 +119,9 @@ textarea.input {
     resize: none;
     overflow-y: auto;
 }
-
+.space{
+    height: 25vh;
+}
 .input-container label {
     position: absolute;
     top: 50%;
@@ -135,7 +141,7 @@ textarea.input {
     transform: translateY(0);
 }
 
-.btn {
+.btnr {
     padding: 0.6rem 1.3rem;
     background-color: #fff;
     border: 2px solid #fafafa;
@@ -149,7 +155,7 @@ textarea.input {
     margin: 0;
 }
 
-.btn:hover {
+.btnr:hover {
     background-color: transparent;
     color: #fff;
 }
@@ -338,7 +344,7 @@ textarea.input {
 }
 
 @media (max-width: 480px) {
-    .container {
+    .containers {
         padding: 1.5rem;
     }
 
@@ -380,7 +386,7 @@ textarea.input {
         padding: 0.45rem 1.2rem;
     }
 
-    .btn {
+    .btnr {
         padding: 0.45rem 1.2rem;
     }
 }
