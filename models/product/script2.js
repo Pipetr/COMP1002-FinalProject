@@ -1,10 +1,15 @@
-const toggle_btn = document.querySelector('.toggle_button');
-const toggle_btn_icon = document.querySelector('.toggle_button i');
-const dropdown = document.querySelector('.drop_down');
+/*=============== SHOW MENU ===============*/
+const showMenu = (toggleId, navId) => {
+    const toggle = document.getElementById(toggleId),
+        nav = document.getElementById(navId)
 
-toggle_btn.onclick = function() {
-    dropdown.classList.toggle('open');
-    const isOpen = dropdown.classList.contains('open');
+    toggle.addEventListener('click', () => {
+        // Add show-menu class to nav menu
+        nav.classList.toggle('show-menu')
 
-    toggle_btn_icon.className = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
-};
+        // Add show-icon to show and hide the menu icon
+        toggle.classList.toggle('show-icon')
+    })
+}
+
+showMenu('nav-toggle', 'nav-menu')

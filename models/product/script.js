@@ -5,15 +5,15 @@ let imgId = 1;
 imgBtns.forEach((imgItem) => {
     imgItem.addEventListener('click', (event) => {
         event.preventDefault();
-        imgId = parseInt(imgItem.dataset.id); // Parse to integer
+        imgId = imgItem.dataset.id;
         slideImage();
     });
 });
 
-function slideImage() {
+function slideImage(){
     const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
 
-    document.querySelector('.img-showcase').style.transform = `translateX(${-(imgId - 1) * displayWidth}px)`;
+    document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
 }
 
 window.addEventListener('resize', slideImage);
