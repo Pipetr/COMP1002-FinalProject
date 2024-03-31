@@ -1,3 +1,5 @@
+// This code snippet is solely used to load the header and footer
+
 function loadHeaderAndFooter() {
     fetch('header.html')
         .then(response => response.text())

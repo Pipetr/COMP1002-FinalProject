@@ -1,3 +1,5 @@
+// THIS CODE SNIPPET IS USED TO MANAGE THE MAIN BODY OF THE CONTACT PAGE
+
 const inputs = document.querySelectorAll(".input");
 
 function focusFunc() {

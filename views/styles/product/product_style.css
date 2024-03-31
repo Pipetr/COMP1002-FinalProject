@@ -42,10 +42,13 @@ img {
 
 .img-select {
     display: flex;
+    border: 2px solid grey;
+    
 }
 
 .img-item {
     margin: 0.3rem;
+    border: 2px solid grey;
     
 }
 
@@ -81,7 +84,9 @@ img {
     width: 80px;
     background: red;
 }
-
+.space{
+    height: 25vh;
+}
 .product-link {
     text-decoration: none;
     text-transform: uppercase;
@@ -240,3 +245,30 @@ img {
     border-color: transparent;
     color: #fff;
 }
+
+/* RESPONSIVE DESIGN START */
+@media screen and (min-width: 992px){
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+    .space{
+        height: 27vh;
+    }
+    .card-wrapper{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content{
+        padding-top: 0;
+    }
+}
+/* RESPONSIVE DESIGN END */
