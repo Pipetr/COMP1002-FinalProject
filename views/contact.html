@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="All About the Nintendo 64">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -70,41 +71,40 @@
             <div class="contact-form">
                 <span class="circle one"></span>
                 <span class="circle two"></span>
-
-                <form action="/COMP1002-FinalProject/views/contact.html" autocomplete="off">
+                <div id="error"></div>
+                <form id="form" action="contact.html" method="get">
                     <h3 class="title">Contact us</h3>
                     <div class="input-container">
-                        <input type="text" name="name" class="input" />
-                        <label for="">Username</label>
+                        <input type="text" name="name" class="input" required/>
+                        <label id="Username">Username</label>
                         <span>Username</span>
                     </div>
                     <div class="input-container">
-                        <input type="email" name="email" class="input" />
-                        <label for="">Email</label>
+                        <input type="email" name="email" class="input" required/>
+                        <label id="email">Email</label>
                         <span>Email</span>
                     </div>
                     <div class="input-container">
-                        <input type="tel" name="phone" class="input" />
-                        <label for="">Phone</label>
+                        <input type="tel" name="phone" class="input" required/>
+                        <label id="phone">Phone</label>
                         <span>Phone</span>
                     </div>
                     <div class="input-container textarea">
-                        <textarea name="message" class="input"></textarea>
-                        <label for="">Message</label>
+                        <textarea name="message" class="input" required></textarea>
+                        <label id="message">Message</label>
                         <span>Message</span>
                     </div>
-                    <input type="submit" value="Send" class="btnr" />
+                    <button id="submit" type = "submit" class="btnr">Submit</button>
                 </form>
             </div>
         </div>
     </div>
-
-
+    <script src="../models/contact/contact_validation.js"></script>
     <script src="../models/global/load_header_and_footer.js"></script>
     <script src="../models/contact/contact_body_script.js"></script>
-</body>
-<footer>
 
-</footer>
+    <footer></footer>
+</body>
+
 
 </html>

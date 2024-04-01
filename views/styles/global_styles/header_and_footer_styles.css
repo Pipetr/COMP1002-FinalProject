@@ -20,7 +20,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    list-style: none;
     position: relative;
     background-color: red;
     padding: 12px 20px;
@@ -34,8 +33,13 @@ body {
     display: flex;
 }
 
+.menu-2{
+    display: flex;
+}
+
 .menu li {
     padding-left: 30px;
+    list-style-type: none;
 }
 
 .menu li a {
@@ -47,6 +51,7 @@ body {
     position: relative;
     text-transform: uppercase;
 }
+
 
 .menu li a::after {
     content: "";
@@ -101,13 +106,26 @@ body {
         background-color: red;
         transition: all 0.2s ease-in-out;
     }
-
+    .menu-2{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: red;
+        transition: all 0.2s ease-in-out;
+    }
     .menu li {
         margin-top: 40px;
     }
 
     .menu li a {
         padding: 10px;
+        text-decoration: none;
     }
 
     .open-menu,
@@ -115,9 +133,10 @@ body {
         display: block;
     }
 
-    #check:checked~.menu {
+    #check:checked~.menu{
         right: 0;
     }
+
 }
 
 
