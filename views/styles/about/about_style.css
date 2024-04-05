@@ -92,6 +92,11 @@
         font-size: 16px;
     }
 
+    .about-text ul {
+        padding-left: 10px; /* Adjusted padding */
+        text-align: left;
+    }
+
     .about-section:nth-child(odd) {
         order: 1; /* Change order for odd numbered sections */
     }
@@ -131,9 +136,16 @@
     display: block; /* Show when 'show' class is added */
 }
 
-.newsletter-prompt .newsletter-button {
+.prompt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.newsletter-button {
+    display: flex;
     background-color: red;
-    align-items: end;
     color: white;
     padding: 5px 10px;
     border: none;
@@ -141,4 +153,17 @@
     cursor: pointer;
     font-size: 16px;
     margin: 0 10px;
+    align-self: flex-end;
+    align-items: baseline;
+}
+
+.sub{
+    display: flex;
+    align-self: end;
+}
+
+.newsletter-button:hover {
+    background-color: #000000;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+    color: red;
 }
