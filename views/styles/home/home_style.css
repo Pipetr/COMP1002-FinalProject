@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body start */
+
+.product-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px 10px 50px;
+    background-color: black;
+}
+
+.display-img {
+    flex: 1;
+    max-width: 50%;
+}
+
+.display-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.display-text {
+    flex: 1;
+    padding: 40px;
+    margin: 0;
+}
+
+.display-text h2 {
+    color: gray;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.display-text span {
+    color: red;
+}
+
+.display-text p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.display-text button {
+    background-color: red;
+    border: none;
+    font: 0.9rem Poppins;
+    color: black;
+    margin-bottom: 10px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 3px solid red;
+    text-align: center;
+    text-decoration: none;
+}
+
+.display-text button:hover {
+    background-color: rgb(255, 86, 86);
+    color: black;
+}
+
+/* Divider lines */
+hr {
+    color: red;
+    border-top: 10px solid;
+}
+
+/* Featured games section */
+.game-teasers {
+    padding: 10px 30px 10px 30px;
+    background-color: black;
+}
+
+.game-title {
+    display: flex;
+    padding: 20px;
+    margin: 0;
+}
+
+.game-title h2 {
+    color: gray;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.game-samples {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 40px;
+    margin-bottom: 15px;
+}
+
+.game-samples img {
+    max-width: 25%;
+    height: auto;
+    margin: 20px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+.game-samples img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+/* News section */
+.news-section {
+    padding: 10px 30px 10px 30px;
+    background-color: black;
+}
+
+.news-title {
+    display: flex;
+    padding: 20px;
+    margin: 0;
+}
+
+.news-title h2 {
+    color: gray;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.news-cards {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.news-cards img {
+    flex: 1;
+    max-width: 80%;
+    height: auto;
+    margin: 0;
+}
+
+.card {
+    padding: 20px;
+}
+
+.card h3 {
+    color: gray;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Gif Section */
+.gif-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px 10px 30px;
+    background-color: black;
+}
+
+.gif-img {
+    padding: 20px;
+}
+
+.gif-text {
+    padding: 20px;
+}
+
+.gif-text h3 {
+    color: gray;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.gif-text span {
+    color: red;
+}
+
+@media (max-width: 800px) {
+    .product-display {
+        flex-direction: column;
+        padding: 30px 0;
+    }
+
+    .display-text, .display-img {
+        max-width: 100%;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .game-samples {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game-samples img {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .news-cards {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .news-cards img {
+        max-width: 100%;
+        padding: 0 0;
+    }
+
+    .gif-section {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+}
+
+/* Newsletter Popup */
+
+.hidden {
+    display: none; /* Hides element by default */
+}
+
+.newsletter-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px 10px 30px;
+    background-color: black;
+}
+
+.newsletter-section h3 {
+    color: gray;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.newsletter-section h4 {
+    color: gray;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.newsletter-section span {
+    color: red;
+}
+
+.newsletter-section button {
+    background-color: red;
+    border: none;
+    font: 0.9rem Poppins;
+    color: black;
+    margin-bottom: 10px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: 3px solid red;
+    text-align: center;
+    text-decoration: none;
+}
+
+.newsletter-section button:hover {
+    background-color: rgb(255, 86, 86);
+    color: black;
+}
+
+/* Body end  */
