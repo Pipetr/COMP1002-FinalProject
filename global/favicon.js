@@ -7,4 +7,4 @@ function setFavicon(iconPath) {
 }
 
 // Call the function with the path to your favicon
-setFavicon('./images/product/favicon.png');
+setFavicon('../views/images/product/favicon.png');
