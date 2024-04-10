@@ -67,16 +67,24 @@
         <!--Gif Section-->
         <section class="gif-section">
             <div class="gif-img">
-                 <img src="https://giphy.com/embed/nj2fLXzf8irpS" width="370" height="270" frameBorder="0" class="gif-embed" allowFullScreen></img> 
+                <iframe src="https://giphy.com/embed/nj2fLXzf8irpS" width="370" height="270" class="gif-embed" allowFullScreen></iframe>
                 <p><a href="https://giphy.com/gifs/soulpancake-game-nj2fLXzf8irpS">via GIPHY</a></p>
             </div>
             <div class="gif-text">
                 <h3>Enjoy enriched gaming experiences with <span>Nintendo Vault!</span></h3>
             </div>
         </section>
+        <section class="newsletter-section">
+            <h3>Join our <span>Newsletter</span> today to keep up on all the Nintendo Vault news!</h3>
+            <button id="showNewsletterButton">Join Now</button>
+            <div id="hiddenContent" class="hidden">
+                <h4 id="subscribe-text">Subscribe here: </h4>
+                <button id="subscribe-button">Subscribe</button>
+            </div>
+        </section>
         <script src="./models/home/index.js"></script>
         <script src="global/favicon.js"></script>
-        <!-- <script src="global/load_header_and_footer.js"></script> -->
+        <script src="./models/home/home_script.js"></script>
         <script src="./global/load_header_and_footer.js"></script>
     </main>
     <!--Footer initialization-->
