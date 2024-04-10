@@ -3,6 +3,6 @@ The intention of this repository is create an e-commerce web page for products b
 
 # Authors:
 
-- Felipe Alfonso
-- Abdulmatin Alayande
-- Sebastian Turner
+- [Felipe Alfonso](https://github.com/Pipetr)
+- [Abdulmatin Alayande](https://github.com/AlayandeWork)
+- [Sebastian Turner](https://github.com/SebbyT381)
