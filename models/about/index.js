@@ -26,13 +26,4 @@ document.addEventListener('DOMContentLoaded', function () {
         newsletterPrompt.classList.remove('show');
         localStorage.setItem('newsletterDismissed', 'true');
     });
-
-    // Stay fixed at the bottom when scrolling all the way down
-    window.addEventListener('scroll', function () {
-        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-            newsletterPrompt.classList.add('bottom-fixed');
-        } else {
-            newsletterPrompt.classList.remove('bottom-fixed');
-        }
-    });
 });
