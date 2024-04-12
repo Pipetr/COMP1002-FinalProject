@@ -2,7 +2,7 @@
 
 function loadHeaderAndFooter() {
     let nameFileHtml = window.location.href.split('/').pop();
-    let isIndex = nameFileHtml === 'index.html';
+    let isIndex = nameFileHtml ? nameFileHtml === 'index.html' ? true : false : false;
     let path = isIndex ? 'views/' : '';
     let nameHeader = `${path}header.html`;
     let nameFooter = `${path}footer.html`;
