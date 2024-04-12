@@ -2,8 +2,8 @@
 
 function loadHeaderAndFooter() {
     let nameFileHtml = window.location.href.split('/').pop();
-    let isIndex = nameFileHtml ? nameFileHtml === 'index.html' ? true : false : false;
-    let path = isIndex ? 'views/' : '';
+    let notIndex = nameFileHtml ? nameFileHtml === 'index.html' ? false : true : true;
+    let path = notIndex ? 'views/' : '';
     let nameHeader = `${path}header.html`;
     let nameFooter = `${path}footer.html`;
     fetch(nameHeader)
