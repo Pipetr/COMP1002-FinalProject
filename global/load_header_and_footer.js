@@ -20,3 +20,5 @@ function loadHeaderAndFooter() {
 }
 
 loadHeaderAndFooter();
+
+// header and footer 
